@@ -83,7 +83,7 @@ window.onload = function () {
 
         fetchJSONData(url)
             .then(res => buildArticles(res))
-            .catch(err => console.error('Error fetching news articles', err));
+            .catch(err => handleError('Error fetching news articles', err));
     }
 
     var buildArticles = function (res) {
