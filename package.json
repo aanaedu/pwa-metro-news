@@ -1,0 +1,15 @@
+{
+  "name": "pwa-metro-news",
+  "version": "1.0.0",
+  "description": "A PWA news aggregation application.",
+  "main": "sw.js",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
