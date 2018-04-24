@@ -9,8 +9,8 @@ if ('function' === typeof importScripts) {
 }
 
 var GOOGLE_FONT_URL = 'https://fonts.gstatic.com';
-var CACHE_STATIC_NAME = 'metro-static_v7';
-var CACHE_DYNAMIC_NAME = 'metro-dynamic_v7';
+var CACHE_STATIC_NAME = 'metro-static_v8';
+var CACHE_DYNAMIC_NAME = 'metro-dynamic_v8';
 var STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -38,11 +38,10 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_STATIC_NAME)
       .then(function (cache) {
-        console.log('[SW] Precaching App Shell');
         return cache.addAll(STATIC_ASSETS);
       })
       .catch(function (e) {
-        console.error('[SW] Precaching Error!', e);
+        console.error('An error occured while precaching files!', e);
       })
   );
 });
