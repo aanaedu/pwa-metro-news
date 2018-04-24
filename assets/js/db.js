@@ -77,6 +77,9 @@ var db = (function () {
       store.index('by-date')
         .openCursor(null, 'prev')
         .then(function (cursor) {
+          if (!cursor) {
+            return;
+          }
           return cursor.advance(19);
         }).then(function deleteRest(cursor) {
           if (!cursor) {
