@@ -7,8 +7,8 @@ body {
     flex-direction: row;
 }
 
-.navbar-nav .nav-link:not(:first-of-type) {
-    padding-left: 1rem;
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
 }
 
 
