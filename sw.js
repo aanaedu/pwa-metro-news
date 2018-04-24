@@ -9,8 +9,8 @@ if ('function' === typeof importScripts) {
 }
 
 var GOOGLE_FONT_URL = 'https://fonts.gstatic.com';
-var CACHE_STATIC_NAME = 'metro-static_v8';
-var CACHE_DYNAMIC_NAME = 'metro-dynamic_v8';
+var CACHE_STATIC_NAME = 'metro-static_v9';
+var CACHE_DYNAMIC_NAME = 'metro-dynamic_v9';
 var STATIC_ASSETS = [
   '/',
   '/index.html',
